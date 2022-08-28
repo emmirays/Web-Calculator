@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Web Calculator by Dev Rays</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta name="generator" content="Dev Rays" />
+    <meta property="og:title" content="Web Calculator" />
+    <meta name="author" content="Admin" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="description"
+        content="Web Calculator Developed by Dev Rays, Beautiful Calculator Design with animated gradient color variants" />
+    <meta property="og:description"
+        content="Web Calculator Developed by Dev Rays, Beautiful Calculator Design with animated gradient color variants" />
+    <link rel="canonical" href="index.html" />
+    <meta property="og:url" content="index.html" />
+    <meta property="og:site_name" content="Web Calculator" />
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" media="screen" href="app.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="mobile.css" />
+</head>
+
+<!--
+/* To Edo Bits HTTrack users {Cohort 2021/2022}: Copy and DIE! */
+
+/* ~~~~~~~~~~~~~~~
+Beautiful Calculator Design with animated gradient color variants
+~~~~~~~~~~~~~~~ */
+
+/* --------
+Developed by Dev Rays
+ ----------*/
+-->
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="display">
+                <input type="text" placeholder="0" id="input" disabled />
+            </div>
+            <div class="number_div">
+                <button class="btn">7</button>
+                <button class="btn mob">8</button>
+                <button class="btn mob mobRight">9</button>
+                <button id="ac" onclick="input.value = '' ">AC</button>
+                <br />
+                <button class="btn">4</button>
+                <button class="btn mob">5</button>
+                <button class="btn mob">6</button>
+                <br />
+                <button class="btn">1</button>
+                <button class="btn mob">2</button>
+                <button class="btn mob">3</button>
+                <br />
+                <button class="btn" onclick="backspace()">
+                    <i class="fa-solid fa-delete-left"></i>
+                </button>
+                <button class="btn mob">0</button>
+                <button class="btn mob">.</button>
+                <br />
+                <button class="btn">÷</button>
+                <button class="btn">×</button>
+                <button class="btn">–</button>
+                <button class="btn">+</button>
+                <button class="btns" id="equal_sign" onclick="input.value = eval(input.value)">
+                    <a style="text-decoration: none; color: white" target="_blank"
+                        href="https://emmanueloyiboke-portfolio.netlify.app/">=</a>
+                </button>
+                <br />
+            </div>
+            <div class="signs_div">
+                <span class="arrow_left"><i class="fa-solid fa-angle-left"></i></span>
+                <button class="sign_btn" onclick="sin()">sin</button>
+                <button class="sign_btn" onclick="cos()">cos</button>
+                <button class="sign_btn" onclick="tan()">tan</button>
+                <br />
+                <button class="sign_btn" onclick="fact()">×!</button>
+                <button class="sign_btn" onclick="pi()">π</button>
+                <button class="sign_btn" onclick="log()">log</button>
+                <br />
+                <button class="sign_btn btn">(</button>
+                <button class="sign_btn btn">)</button>
+                <button class="sign_btn" onclick="root()">√</button>
+                <br />
+                <button class="sign_btn" onclick="e()">e</button>
+                <button class="sign_btn btn">%</button>
+                <button class="sign_btn" onclick="pow()">
+                    x
+                    <span style="position: relative; bottom: 0.4em; right: 0.1em">y</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="links">
+                <a href="#"></a>
+                <a href="#"></a>
+            </div>
+            <p>
+                Made with <span class="red">HTML</span>
+                <span class="blue">CSS</span> &amp;
+                <span class="yellow">JAVASCRIPT</span>
+            </p>
+            <p>
+                check out my portfplio 👉
+                <a target="_blank" href="https://emmanueloyiboke-portfolio.netlify.app/">Dev Rays</a>👩‍💻
+            </p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
