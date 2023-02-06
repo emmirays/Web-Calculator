@@ -1,0 +1,48 @@
+@media (max-height: 500px) {
+    .container {
+        height: 370px;
+        width: 650px;
+    }
+
+    .display {
+        height: 100%;
+        width: 300px;
+        border-top-right-radius: 0;
+    }
+
+    .number_div{
+        position: relative;
+        right: 0;
+        padding-top: 10px;
+        left: 320px;
+    }
+
+    .number_div,
+    .signs_div {
+        height: 370px;
+    }
+
+    .mob{
+        margin-left: 30px;
+    }
+    
+    .mobRight{
+        margin-right: 18px;
+    }
+
+    #equal_sign{
+        top: 190px;
+        left: 250px;
+    }
+
+    .btn,
+    .btn,
+    #ac {
+        padding: 7px;
+    }
+
+    .footer{
+        transform: translate(3%, -50%);
+        left: 0;
+    }
+}
